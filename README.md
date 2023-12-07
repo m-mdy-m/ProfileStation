@@ -28,8 +28,14 @@ To get _ProfileStation_ up and running on your local machine, follow these steps
 
 ```bash
 git clone https://github.com/yourUsername/ProfileStation.git
+```
+```bash
 cd ProfileStation
+```
+```bash
 npm install
+```
+```bash
 npm start
 ```
 After these steps, the application should be running on [http://localhost:3000](http://localhost:3000) or another port if you configured a different one.
