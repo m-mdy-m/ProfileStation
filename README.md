@@ -50,11 +50,6 @@ Contributions are welcome and will help make _ProfileStation_ even better. If yo
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-2. **License Link**: You've included the MIT License link twice at the end, probably by mistake. Consider retaining only one link to avoid redundancy and align with your prior section mentioning the license:
-
-```markdown
 ## License
 
 _ProfileStation_ is open source and available under the [MIT License](https://github.com/m-mdy-m/ProfileStation/blob/main/LICENSE). See the `LICENSE` file for more information.
-```
