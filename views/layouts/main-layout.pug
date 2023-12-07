@@ -9,9 +9,15 @@ html(lang="en")
     body 
         div.container
             header.header
-                nav.header__navigation
-
                 div.header__User-search
+                nav.header__navigation 
+                    li.header__navigation-items.active
+                        a.header__navigation-link(href="/") home
+                    li.header__navigation-items
+                        a.header__navigation-link(href="/signIn") signIn
+                    li.header__navigation-items
+                        a.header__navigation-link(href="profiles") profiles
+
                 div.header__profile-user
 
             block content 

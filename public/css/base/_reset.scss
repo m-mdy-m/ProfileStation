@@ -1,3 +1,4 @@
+@import "variables";
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
 body {
   height: 100vh;
   width: 100%;
+  background-color: $color__Greyscale-900;
 }
 .container {
   width: 100%;
