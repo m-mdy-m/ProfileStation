@@ -14,32 +14,32 @@ html(lang="en")
                         img.header__User-search-img(src="/assets/icons/search/search.svg", alt="")
                         input.header__User-search-input(type="search")
                 nav.header__navigation 
-                    li.header__navigation-items.active
+                    li.header__navigation-items(class=path === '/' ? 'active' : '')
                         a.header__navigation-link(href="/") home
-                    li.header__navigation-items
+                    li.header__navigation-items(class=path === '/signIn' ? 'active' : '')
                         a.header__navigation-link(href="/signIn") signIn
-                    li.header__navigation-items
+                    li.header__navigation-items(class=path === '/profiles' ? 'active' : '')
                         a.header__navigation-link(href="profiles") profiles
 
                 div.header__profile-user
                     div.header__profile-user-wrapper 
                         img.header__profile-user-profile(src="/assets/icons/users/user.svg", alt="")
                         div.header__profile-user-username
-                            h3 mahdi 
-                            p mamashli
+                            h3 #{username} 
+                            p #{family}
                     div.info__user-modal
                         div.info__user-username
                             h4 username:
-                            p m__mdy__m
+                            p #{username} 
                         div.info__user-age
                             h4 age:
-                            p 19
+                            p #{age}
                         div.info__user-family
                             h4 family:
-                            p mamashli
+                            p #{family}
                         div.info__user-name
                             h4 name:
-                            p mahdi
+                            p #{name}
 
 
             block content 
