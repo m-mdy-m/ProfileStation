@@ -11,8 +11,8 @@ html(lang="en")
             header.header
                 div.header__User-search
                     div.header__User-search-wrapper
-                        img(src="/assets/icons/search/search.svg", alt="")
-                        input(type="search")
+                        img.header__User-search-img(src="/assets/icons/search/search.svg", alt="")
+                        input.header__User-search-input(type="search")
                 nav.header__navigation 
                     li.header__navigation-items.active
                         a.header__navigation-link(href="/") home
@@ -27,3 +27,5 @@ html(lang="en")
             
 
             footer.footer
+    script(src="/js/header.js") 
+    block scripts 

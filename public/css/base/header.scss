@@ -4,42 +4,53 @@
   height: 3rem;
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  margin-top: 1rem;
   & > * {
     width: 100%;
     height: 100%;
   }
   &__User-search {
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &-wrapper {
       position: relative;
       display: flex;
       justify-content: flex-start;
-      align-items: center;
-      width: 100%;
+      align-items: flex-end;
+      width: 70%;
       height: 100%;
-      img {
-        padding: 2px;
-        background-color: red;
-        border-radius: 50%;
-        margin-left: 2rem;
-        cursor: pointer;
-      }
-      img:active input{
-        width: 100%;
-      }
-      input {
-        transition: all 2s;
-        border: none;
-        background-color: red;
-        padding: 4px 2px;
-        width: 0px;
-        border-radius: 12px;
-        outline: none;
-        &::-webkit-search-cancel-button {
-          appearance: none;
-          -webkit-appearance: none;
-          -webkit-appearance: none;
-        }
+      position: relative;
+      margin-bottom: 10px;
+    }
+    &-img {
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      padding: 4px;
+      background-color: #10615ad0;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+    }
+    &-input {
+      opacity: 0;
+      transition: all 2s;
+      border: none;
+      background-color: #10615ad0;
+      padding: 4px 2px;
+      color: #ffffff;
+      width: 0px;
+      border-radius: 0 8px 8px 0px;
+      outline: none;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      margin-bottom: 1px;
+      visibility: hidden;
+      &::-webkit-search-cancel-button {
+        appearance: none;
+        -webkit-appearance: none;
+        -webkit-appearance: none;
       }
     }
   }
@@ -55,12 +66,12 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
       position: relative;
       &::before {
         content: "";
         position: absolute;
-        inset: auto 0 -4px 0;
+        inset: auto 0 0 0;
         margin: 0 auto;
         height: 1px;
         width: 50%;
@@ -72,7 +83,7 @@
       &::after {
         content: "";
         position: absolute;
-        inset: auto 0 -2px 0;
+        inset: auto 0 0 0;
         margin: 0 auto;
         height: 2px;
         width: 50%;
@@ -105,7 +116,7 @@
   &::before {
     content: "";
     position: absolute;
-    inset: auto 0 -2px 0;
+    inset: auto 0 0 0;
     margin: 0 auto;
     height: 1px;
     background-color: $color__Secondary-400;
@@ -116,4 +127,10 @@
     transform: scale(1);
     background-color: transparent;
   }
+}
+.showInput {
+  width: 100%;
+  transition: all 2s;
+  opacity: 1;
+  visibility: visible;
 }
