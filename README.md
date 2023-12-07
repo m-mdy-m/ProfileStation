@@ -26,11 +26,12 @@ The primary goal of this project is to deepen my understanding and practice my s
 
 To get _ProfileStation_ up and running on your local machine, follow these steps:
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Install dependencies
-4. Start the server
-
+```bash
+git clone https://github.com/yourUsername/ProfileStation.git
+cd ProfileStation
+npm install
+npm start
+```
 After these steps, the application should be running on [http://localhost:3000](http://localhost:3000) or another port if you configured a different one.
 
 ## Contributing
