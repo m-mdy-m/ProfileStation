@@ -1,9 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    width: 100%;
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: $font__;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  margin: 0 auto;
+  padding: 0 5rem;
 }

@@ -1,9 +1,10 @@
-@import "base.scss";
-
+@import "reset";
+@import "fontFamily";
+@import "variables";
 .header{
     width: 100%;
-    height: 2rem;
-    background-color: #fff;
+    height: 4rem;
+    background-color: $color__Secondary-50;
     display: flex;
     justify-content: space-between;
     align-items: center;

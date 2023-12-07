@@ -33,4 +33,8 @@ body {
 @font-face {
   font-family: "SatoshiRegular";
   src: url("../../assets/fonts/Satoshi-Regular.otf");
-}/*# sourceMappingURL=base.css.map */
+}
+.footer {
+  width: 100%;
+  background-color: red;
+}/*# sourceMappingURL=footer.css.map */
