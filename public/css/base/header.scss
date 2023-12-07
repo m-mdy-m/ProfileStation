@@ -1,14 +1,19 @@
 @import "base.scss";
 
 .header{
-
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &__navigation{
 
     }
-    &__search{
+    &__User-search{
 
     }
-    &__profiles{
-        
+    &__profile-user{
+
     }
 }

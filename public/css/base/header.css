@@ -24,4 +24,12 @@ body {
 @font-face {
   font-family: "SatoshiRegular";
   src: url("../../assets/fonts/Satoshi-Regular.otf");
+}
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=header.css.map */
