@@ -117,6 +117,7 @@
   grid-template-columns: 20% minmax(80%, 1fr);
   width: 70%;
   height: 100%;
+  cursor: pointer;
   align-items: center;
 }
 .header__profile-user-profile {
@@ -144,7 +145,10 @@
 .info__user-modal {
   position: absolute;
   width: 18rem;
-  height: 7rem;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
   background-image: linear-gradient(to bottom, rgba(54, 106, 151, 0.4235294118), rgba(49, 94, 143, 0.4196078431), rgba(46, 86, 135, 0.4196078431), rgba(43, 77, 127, 0.4039215686), rgba(40, 67, 118, 0.1647058824));
   inset: 136% 0px 0% -50px;
   border-radius: 12px;
