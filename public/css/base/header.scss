@@ -34,7 +34,7 @@
       z-index: 2;
     }
     &-input {
-      opacity: .7;
+      opacity: 0.7;
       transition: all 2s;
       border: none;
       background-color: #10615ad0;
@@ -108,9 +108,116 @@
     }
   }
   &__profile-user {
-    background-color: #fff;
+    display: flex;
+    position: relative;
+    &-wrapper {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 20% minmax(80%, 1fr);
+      width: 70%;
+      height: 100%;
+      align-items: center;
+    }
+    &-profile {
+      padding: 2px;
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    &-username {
+      font-family: $family__SRegular;
+      color: $color__Greyscale-400;
+      text-transform: capitalize;
+      margin-left: 10px;
+      h3 {
+        text-transform: uppercase;
+        font-size: $font__medium;
+      }
+      p {
+        font-size: $font__Vsm;
+      }
+    }
   }
 }
+.info__user {
+  &-modal {
+    position: absolute;
+    width: 18rem;
+    height: 7rem;
+    background-image: linear-gradient(
+      to bottom,
+      #366a976c,
+      #315e8f6b,
+      #2e56876b,
+      #2b4d7f67,
+      #2843762a
+    );
+    inset: 136% 0px 0% -50px;
+    border-radius: 12px;
+    display: grid;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid #ffffff85;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #366a976c;
+      border: 1px solid #ffffff85;
+      inset: -20% 0 auto 0;
+      margin: 0 auto;
+      width: 20px;
+      height: 20px;
+      background-color: fff;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    & > * {
+      width: 100%;
+      height: 100%;
+      font-family: $family__SLight;
+      font-size: $font__sm;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      color: $color__Greyscale-400;
+    }
+    & > div > h4::before {
+      position: absolute;
+      content: "";
+      inset: auto 0 0 0;
+      margin: 0 auto;
+      width: 20px;
+      height: 4px;
+      background-color: $color_Additional-Amber;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    & > div > h4 {
+      color: $color__Greyscale-800;
+      font-size: $font__medium;
+      font-family: $family__SBold;
+    }
+    &>div>p{
+      text-transform: uppercase;
+    }
+  }
+  &-username {
+  }
+  &-age {
+  }
+  &-family {
+  }
+  &-name {
+  }
+}
+
 .active {
   position: relative;
   &::before {
