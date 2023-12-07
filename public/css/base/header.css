@@ -35,19 +35,18 @@
   z-index: 2;
 }
 .header__User-search-input {
-  opacity: 0;
+  opacity: 0.7;
   transition: all 2s;
   border: none;
   background-color: rgba(16, 97, 90, 0.8156862745);
   padding: 4px 2px;
   color: #ffffff;
-  width: 0px;
+  width: 50%;
   border-radius: 0 8px 8px 0px;
   outline: none;
   margin-left: 1rem;
   padding-left: 1rem;
   margin-bottom: 1px;
-  visibility: hidden;
 }
 .header__User-search-input::-webkit-search-cancel-button {
   appearance: none;
@@ -108,6 +107,10 @@
   text-transform: capitalize;
   position: relative;
 }
+.header__profile-user {
+  background-color: #fff;
+}
+
 .active {
   position: relative;
 }

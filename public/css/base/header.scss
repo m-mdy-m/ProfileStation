@@ -34,19 +34,18 @@
       z-index: 2;
     }
     &-input {
-      opacity: 0;
+      opacity: .7;
       transition: all 2s;
       border: none;
       background-color: #10615ad0;
       padding: 4px 2px;
       color: #ffffff;
-      width: 0px;
+      width: 50%;
       border-radius: 0 8px 8px 0px;
       outline: none;
       margin-left: 1rem;
       padding-left: 1rem;
       margin-bottom: 1px;
-      visibility: hidden;
       &::-webkit-search-cancel-button {
         appearance: none;
         -webkit-appearance: none;
@@ -109,6 +108,7 @@
     }
   }
   &__profile-user {
+    background-color: #fff;
   }
 }
 .active {

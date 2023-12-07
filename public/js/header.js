@@ -5,6 +5,10 @@ searchImg.addEventListener('click',(e)=>{
     e.stopPropagation()
     searchInput.classList.toggle('showInput');
 })
+searchInput.addEventListener('click',(e)=>{
+    e.stopPropagation()
+    searchInput.classList.toggle('showInput');
+})
 body.addEventListener('click', (e) => {
     if (!searchInput.contains(e.target) && e.target !== searchImg) {
         searchInput.classList.remove('showInput');
