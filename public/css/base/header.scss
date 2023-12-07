@@ -1,20 +1,15 @@
-@import "reset";
-@import "fontFamily";
 @import "variables";
-.header{
-    width: 100%;
-    height: 4rem;
-    background-color: $color__Secondary-50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__navigation{
-
-    }
-    &__User-search{
-
-    }
-    &__profile-user{
-
-    }
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: $color__Alerts-Success;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__navigation {
+  }
+  &__User-search {
+  }
+  &__profile-user {
+  }
 }
