@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("../../assets/fonts/Satoshi-Bold.otf");
+}
+@font-face {
+  font-family: "SatoshiLight";
+  src: url("../../assets/fonts/Satoshi-Light.otf");
+}
+@font-face {
+  font-family: "SatoshiMedium";
+  src: url("../../assets/fonts/Satoshi-Medium.otf");
+}
+@font-face {
+  font-family: "SatoshiRegular";
+  src: url("../../assets/fonts/Satoshi-Regular.otf");
+}/*# sourceMappingURL=header.css.map */
