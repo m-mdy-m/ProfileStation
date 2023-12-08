@@ -5,8 +5,14 @@ const app = express();
 const home = require("./src/routes/home.js");
 const signInRouter = require("./src/routes/signIn.js");
 const signUpRouter = require("./src/routes/signUp.js");
+const expressHbs = require("express-handlebars");
+// CONFIG INSTALL HBS 
+app.engine('hbs', expressHbs())
+app.set('view engine', "hbs")
 
-app.set("view engine", "pug");
+/// CONFIG INSTALL PUG
+// app.set("view engine", "pug");
+
 app.set("views", "views");
 
 console.log(path.join(__dirname, "public"));
