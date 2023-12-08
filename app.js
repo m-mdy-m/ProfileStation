@@ -6,16 +6,21 @@ const home = require("./src/routes/home.js");
 const signInRouter = require("./src/routes/signIn.js");
 const signUpRouter = require("./src/routes/signUp.js");
 const { engine } = require("express-handlebars");
+// Config install EjS
+
+app.set('view engine' , 'ejs')
+
+
 
 // CONFIG INSTALL HBS
-app.engine(
-  "hbs",
-  engine({
-    defaultLayout: "main-layout",
-    extname: "hbs",
-  })
-);
-app.set("view engine", "hbs");
+// app.engine(
+//   "hbs",
+//   engine({
+//     defaultLayout: "main-layout",
+//     extname: "hbs",
+//   })
+// );
+// app.set("view engine", "hbs");
 
 /// CONFIG INSTALL PUG
 // app.set("view engine", "pug");
