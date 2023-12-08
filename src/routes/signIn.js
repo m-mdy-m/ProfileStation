@@ -5,7 +5,7 @@ const path = require('path')
 router.get("/signIn", (req, res) => {
   res.render("signIn", {
     title: "signIn",
-    path: "/signIn",
+    path: "/SignIn",
     username: "m__mdy__m",
     name: "mahdi",
     age: "20",
