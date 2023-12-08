@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{styles}}
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__User-search">
+          <div class="header__User-search-wrapper">
+            <img
+              src="/assets/icons/search/search.svg"
+              alt=""
+              class="header__User-search-img"
+            />
+            <input type="search" class="header__User-search-input" />
+          </div>
+        </div>
+        <nav class="header__navigation">
+          <li class="header__navigation-items"><a
+              href="/"
+              class="header__navigation-link"
+            >home</a></li>
+          <li class="header__navigation-items"><a
+              href="/signIn"
+              class="header__navigation-link"
+            >signIn</a></li>
+          <li class="header__navigation-items"><a
+              href="/signUp"
+              class="header__navigation-link"
+            >signUp</a></li>
+        </nav>
+        <div class="header__profile-user">
+          <div class="header__profile-user-wrapper">
+            <img
+              src="/assets/icons/users/user.svg"
+              alt=""
+              class="header__profile-user-profile"
+            />
+            <div class="header__profile-user-username">
+              <h3> {{username}} </h3>
+              <p> {{family}} </p>
+            </div>
+          </div>
+          <div class="info__user-modal">
+            <div class="info__user-username">
+              <h4> username: </h4>
+              <p> {{username}} </p>
+            </div>
+            <div class="info__user-age">
+              <h4> age: </h4>
+              <p> {{age}} </p>
+            </div>
+            <div class="info__user-family">
+              <h4> family: </h4>
+              <p> {{family}} </p>
+            </div>
+            <div class="info__user-name">
+              <h4> name: </h4>
+              <p> {{name}} </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      {{body}}
+      <footer class="footer">
+        <div class="social">
+          <li class="social__items">
+            <a
+              href="https://www.instagram.com/_medishn_/"
+              class="social__items-links"
+            >
+              <img src="/assets/icons/social/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li class="social__items">
+            <a href="https://t.me/m_mdy_m" class="social__items-links">
+              <img src="/assets/icons/social/telegram.svg" alt="telegram" />
+            </a>
+          </li>
+          <li class="social__items">
+            <a
+              href="https://twitter.com/shaggy__83"
+              class="social__items-links"
+            >
+              <img src="/assets/icons/social/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+
+        </div>
+        <div class="creator">
+          <h3 class="creator__title">creator</h3>
+          <div class="creator__info">
+            <img src="/assets/images/profileCreator.jpg" alt="" />
+            <h4>{{name}}</h4>
+          </div>
+
+        </div>
+
+      </footer>
+    </div>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    {{scripts}}
+  </body>
+</html>

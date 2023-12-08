@@ -6,9 +6,15 @@ const home = require("./src/routes/home.js");
 const signInRouter = require("./src/routes/signIn.js");
 const signUpRouter = require("./src/routes/signUp.js");
 const expressHbs = require("express-handlebars");
-// CONFIG INSTALL HBS 
-app.engine('hbs', expressHbs())
-app.set('view engine', "hbs")
+// CONFIG INSTALL HBS
+app.engine(
+  "hbs",
+  expressHbs({
+    defaultLayout: "main-layout",
+    extname: "hbs",
+  })
+);
+app.set("view engine", "hbs");
 
 /// CONFIG INSTALL PUG
 // app.set("view engine", "pug");
