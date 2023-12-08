@@ -1,0 +1,12 @@
+.page__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.page__home-text {
+  font-size: 300px;
+  font-family: "SatoshiBold";
+  color: #f3f7f9;
+  text-transform: uppercase;
+}/*# sourceMappingURL=home.css.map */

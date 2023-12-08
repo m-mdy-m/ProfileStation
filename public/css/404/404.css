@@ -1,0 +1,11 @@
+.page_404 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.page_404-text {
+  font-size: 300px;
+  font-family: "SatoshiBold";
+  color: #f3f7f9;
+}/*# sourceMappingURL=404.css.map */

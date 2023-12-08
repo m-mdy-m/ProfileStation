@@ -1,0 +1,12 @@
+@import "../base/variables";
+.page_404{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    &-text{
+        font-size: 300px;
+        font-family: $family__SBold;
+        color: $color__Greyscale-200;
+    }
+}

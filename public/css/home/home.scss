@@ -1,0 +1,13 @@
+@import "../base/variables";
+.page__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &-text {
+    font-size: 300px;
+    font-family: $family__SBold;
+    color: $color__Greyscale-200;
+    text-transform: uppercase;
+  }
+}
