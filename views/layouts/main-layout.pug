@@ -46,8 +46,18 @@ html(lang="en")
             
 
             footer.footer
-                div.company
                 div.social
+                    li.social__items(data-bg="#F15B5B")
+                        a(href="https://www.instagram.com/_medishn_/").social__items-links
+                            img(src="/assets/icons/social/instagram.svg", alt="instagram")
+                    li.social__items(data-bg="#06C1FF")
+                        a(href="https://t.me/m_mdy_m").social__items-links
+                            img(src="/assets/icons/social/telegram.svg", alt="telegram")
+                    li.social__items(data-bg="#51D4FF")
+                        a(href="https://twitter.com/shaggy__83").social__items-links
+                            img(src="/assets/icons/social/twitter.svg", alt="twitter")
+                div.company
                 div.creator 
     script(src="/js/header.js") 
+    script(src="/js/footer.js") 
     block scripts 
