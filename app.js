@@ -8,9 +8,7 @@ const signUpRouter = require("./src/routes/signUp.js");
 const { engine } = require("express-handlebars");
 // Config install EjS
 
-app.set('view engine' , 'ejs')
-
-
+app.set("view engine", "ejs");
 
 // CONFIG INSTALL HBS
 // app.engine(
@@ -41,6 +39,7 @@ app.use((req, res, next) => {
     name: "mahdi",
     age: "20",
     family: "mamashlis",
+    path: req.path,
   });
 });
 app.listen(3000, () => {
