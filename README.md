@@ -28,6 +28,8 @@ Clone the project repository by running:
 
 ```bash
 git clone https://github.com/m-mdy-m/ProfileStation.git
+```
+```bash
 cd ProfileStation
 ```
 
