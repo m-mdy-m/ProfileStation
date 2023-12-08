@@ -26,22 +26,22 @@ This project serves as a hands-on practice environment to fortify an understandi
 
 Clone the project repository by running:
 
-\```bash
-git clone https://github.com/yourUsername/ProfileStation.git
+```bash
+git clone https://github.com/m-mdy-m/ProfileStation.git
 cd ProfileStation
-\```
+```
 
 Install the required dependencies by executing:
 
-\```bash
+```bash
 npm install
-\```
+```
 
 Start the server locally by running:
 
-\```bash
+```bash
 npm run start
-\```
+```
 
 The application will be accessible at [http://localhost:3000](http://localhost:3000). The routes include:
 
