@@ -1,0 +1,59 @@
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__User-search">
+          <div class="header__User-search-wrapper">
+            <img
+              src="/assets/icons/search/search.svg"
+              alt=""
+              class="header__User-search-img"
+            />
+            <input type="search" class="header__User-search-input" />
+          </div>
+        </div>
+        <nav class="header__navigation">
+          <li class="header__navigation-items <%= path=== '/' ? 'active' : ''%>"><a
+              href="/"
+              class="header__navigation-link"
+            >home</a></li>
+          <li class="header__navigation-items  <%= path === '/SignIn' ? 'active' : '' %>"><a
+              href="/SignIn"
+              class="header__navigation-link"
+            >signIn</a></li>
+          <li class="header__navigation-items <%= path=== '/signUp' ? 'active' : ''%>"><a
+              href="/signUp"
+              class="header__navigation-link"
+            >signUp</a></li>
+        </nav>
+        <div class="header__profile-user">
+          <div class="header__profile-user-wrapper">
+            <img
+              src="/assets/icons/users/user.svg"
+              alt=""
+              class="header__profile-user-profile"
+            />
+            <div class="header__profile-user-username">
+              <h3> <%= username %> </h3>
+              <p> <%= family %></p>
+            </div>
+          </div>
+          <div class="info__user-modal">
+            <div class="info__user-username">
+              <h4> username: </h4>
+              <p> <%= username %> </p>
+            </div>
+            <div class="info__user-age">
+              <h4> age: </h4>
+              <p> <%= age %> </p>
+            </div>
+            <div class="info__user-family">
+              <h4> family: </h4>
+              <p> <%= family %> </p>
+            </div>
+            <div class="info__user-name">
+              <h4> name: </h4>
+              <p> <%= name %> </p>
+            </div>
+          </div>
+        </div>
+      </header>
