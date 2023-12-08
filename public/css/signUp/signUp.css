@@ -1,0 +1,10 @@
+.page__signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 100px;
+  font-family: "SatoshiBold";
+  color: #4ADE80;
+  text-transform: uppercase;
+}/*# sourceMappingURL=signUp.css.map */

@@ -1,0 +1,11 @@
+@import "../base/variables";
+.page__signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 100px;
+  font-family: $family__SBold;
+  color: $color_Additional-Violet;
+  text-transform: uppercase;
+}

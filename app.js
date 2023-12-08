@@ -1,12 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const routerDir = require("./views/util/path.js");
 const app = express();
 const home = require("./src/routes/home.js");
 const signInRouter = require("./src/routes/signIn.js");
 const signUpRouter = require("./src/routes/signUp.js");
-const profileRouter = require("./src/routes/profiles.js");
 
 app.set("view engine", "pug");
 app.set("views", "views");
