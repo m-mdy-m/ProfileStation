@@ -5,11 +5,12 @@ const app = express();
 const home = require("./src/routes/home.js");
 const signInRouter = require("./src/routes/signIn.js");
 const signUpRouter = require("./src/routes/signUp.js");
-const expressHbs = require("express-handlebars");
+const { engine } = require("express-handlebars");
+
 // CONFIG INSTALL HBS
 app.engine(
   "hbs",
-  expressHbs({
+  engine({
     defaultLayout: "main-layout",
     extname: "hbs",
   })
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use((req, res, next) => {
   res.status(404).render("404", {
+    layout: "main-layout",
     title: "404 - Page Not Found",
     username: "m__mdy__m",
     name: "mahdi",

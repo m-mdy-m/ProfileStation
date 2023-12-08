@@ -1,7 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const path = require("path");
-const pathRouter = require("../../views/util/path.js");
 router.get("/", (req, res) => {
   res.render("home", {
     title: "home",
@@ -10,6 +8,10 @@ router.get("/", (req, res) => {
     name: "mahdi",
     age: "20",
     family: "mamashlis",
+    styles:'/css/home/home.css',
+    activeHome: true,
+    activeSignIn: false,
+    activeSignUp: false,
   });
 });
 module.exports = router;

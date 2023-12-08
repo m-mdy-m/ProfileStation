@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
     <link rel="stylesheet" href="/css/main.css">
-    {{styles}}
+    {{{styles}}}
   </head>
   <body>
     <div class="container">
@@ -20,15 +20,15 @@
           </div>
         </div>
         <nav class="header__navigation">
-          <li class="header__navigation-items"><a
+          <li class="header__navigation-items{{#if activeHome}} active{{/if}}"><a
               href="/"
               class="header__navigation-link"
             >home</a></li>
-          <li class="header__navigation-items"><a
-              href="/signIn"
+          <li class="header__navigation-items{{#if activeSignIn}} active{{/if}}"><a
+              href="/SignIn"
               class="header__navigation-link"
             >signIn</a></li>
-          <li class="header__navigation-items"><a
+          <li class="header__navigation-items{{#if activeSignUp}} active{{/if}}"><a
               href="/signUp"
               class="header__navigation-link"
             >signUp</a></li>
@@ -65,10 +65,10 @@
           </div>
         </div>
       </header>
-      {{body}}
+      {{{body}}}
       <footer class="footer">
         <div class="social">
-          <li class="social__items">
+          <li class="social__items ">
             <a
               href="https://www.instagram.com/_medishn_/"
               class="social__items-links"
@@ -99,11 +99,10 @@
           </div>
 
         </div>
-
       </footer>
     </div>
     <script src="/js/header.js"></script>
     <script src="/js/footer.js"></script>
-    {{scripts}}
+    {{{ scripts }}}
   </body>
 </html>

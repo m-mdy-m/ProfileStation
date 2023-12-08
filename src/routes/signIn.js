@@ -9,6 +9,9 @@ router.get("/signIn", (req, res) => {
     name: "mahdi",
     age: "20",
     family: "mamashlis",
+    activeHome: false,
+    activeSignIn: true,
+    activeSignUp: false,
   });
 });
 module.exports = router;

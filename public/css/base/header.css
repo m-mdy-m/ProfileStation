@@ -3,7 +3,6 @@
   height: 3rem;
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  margin-top: 1rem;
 }
 .header > * {
   width: 100%;
